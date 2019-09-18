@@ -6,7 +6,7 @@ class Shoe
 
   def initialize(brand)
     @brand = brand
-    if BRANDS.find { |brand_name| brand_name == brand } != nil
+    if BRANDS.find { |brand_name| brand_name == brand } == nil
     BRANDS << brand
   end 
   end
